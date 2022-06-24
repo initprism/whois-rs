@@ -1,0 +1,14 @@
+[package]
+name                    = "whois"
+version                 = "0.1.0"
+edition                 = "2021"
+
+[dependencies]
+anyhow                  = { version = "1.0" }
+serde                   = { version = "1", features = ["derive"] }
+whois-rust              = { version = "1.5.0", features = ["tokio"] }
+chrono                  = { version = "0.4" }
+regex                   = { version = "1.5" }
+
+[dev-dependencies]
+tokio-test              = "*"
